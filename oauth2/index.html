@@ -1,0 +1,7 @@
+<!DOCTYPE html><!--!
+@license
+Copyright (c) 2017 The Contrast Tool Authors. All rights reserved.
+This code may only be used under the BSD style license found at //contrast-tool.github.io/LICENSE
+The complete set of authors may be found at https://contrast-tool.github.io/AUTHORS
+The complete set of contributors may be found at https://contrast-tool.github.io/CONTRIBUTORS
+--><html lang="en-NL" dir="ltr"><head><base href="/"><title>Contrast Tool - OAuth2</title><script>var parseQueryString=function parseQueryString(str){var ret=Object.create(null);if("string"!==typeof str){return ret}str=str.trim().replace(/^(\?|#|&)/,"");if(!str){return ret}str.split("&").forEach(function(param){var parts=param.replace(/\+/g," ").split("="),key=parts.shift(),val=0<parts.length?parts.join("="):void 0;key=decodeURIComponent(key);val=val===void 0?null:decodeURIComponent(val);if(ret[key]===void 0){ret[key]=val}else if(Array.isArray(ret[key])){ret[key].push(val)}else{ret[key]=[ret[key],val]}});return ret};if(!self.opener)self.location.href=self.location.origin;var AppKey="dlxog8x736ba0rl",AuthRedirectURI="".concat(self.location.origin).concat(self.location.pathname),AuthParams=parseQueryString(self.location.hash);if(Object.keys(AuthParams).length){self.opener.dispatchEvent(new CustomEvent("oauth:done",{detail:AuthParams}))}else{var OAuth2Uri="https://www.dropbox.com/oauth2/authorize?";OAuth2Uri+="response_type=token";OAuth2Uri+="&client_id=".concat(AppKey);OAuth2Uri+="&redirect_uri=".concat(AuthRedirectURI);self.location.href=OAuth2Uri};</script></head><body></body></html>
