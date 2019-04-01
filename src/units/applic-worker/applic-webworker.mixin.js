@@ -1,1 +1,0 @@
-import{WorkerMixin}from"./applic-worker.mixin.js";export var WebWorkerMixin=function(_WorkerMixin){babelHelpers.inherits(WebWorkerMixin,_WorkerMixin);function WebWorkerMixin(){babelHelpers.classCallCheck(this,WebWorkerMixin);return babelHelpers.possibleConstructorReturn(this,babelHelpers.getPrototypeOf(WebWorkerMixin).apply(this,arguments))}return WebWorkerMixin}(WorkerMixin);
